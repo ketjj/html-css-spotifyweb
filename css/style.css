@@ -1,0 +1,70 @@
+/* MAIN */
+
+main {
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+
+/* ASIDE */
+
+.aside {
+  width: 200px;
+}
+.aside-up {
+  height: calc(100% - 50px);
+}
+.aside-down {
+  height: 50px;
+}
+
+/* MAIN-CONETENT */
+
+.main-content {
+  width: calc(100% - 200px);
+}
+
+/* UPPER */
+
+.upper {
+  position: fixed;
+  z-index: 995;
+  top: 0;
+  right:0;
+  width: calc(100% - 200px);
+  height: 60px;
+  /* overflow: hidden; */
+}
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+/* LOWER */
+
+.lower {
+  padding-top: 5%;
+  height: 100%;
+}
+
+.menu-list {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.menu-list li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 8px;
+}
+
+/* FOOTER */
+
+footer{
+  justify-content: space-between;
+  height: 70px;
+}
