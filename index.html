@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
  
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/utility.css">
@@ -21,38 +25,134 @@
   <main class="dsp-flex">
     
     <!-- ASIDE -->
-    <section class="aside debug">
-      <div class="aside-up">UP</div>
-      <div class="aside-down debug">DOWN</div>
-    </section>
-    <!-- //ASIDE -->
+    <section class="aside dsp-flex debug">
 
-    <section class="main-content debug">
+      <section class="aside-up">
+        <img class="logo pdg-l" src="img/logo.svg" alt="">
+
+        <div class="icon-text">
+
+         <div class="home dsp-flex">
+           <div class="active-h"></div>
+           <img src="img/home.svg" alt="">
+           <span><a href="#">Home</a></span>
+         </div>
+         <div class="search dsp-flex">
+          <div class="active-h"></div>
+          <img src="img/search.svg" alt="">
+          <span><a href="#">Cerca</a></span>
+         </div>
+         <div class="mylibrary dsp-flex">
+          <div class="active-h"></div>
+          <img src="img/libreria.svg" alt="">
+          <span><a href="#">La tua libreria</a></span>
+         </div>
+       </div>
+
+       <!-- ASIDE-CENTER -->
+
+       <section class="aside-center pdg-l mgn-top15">
+
+         <div class="ttl up-case">playlist</div>
+         <div class="icon-text dsp-flex">
+          <i class="fa-solid fa-square-plus"></i>
+          <span>Crea Playlist</span>
+         </div>
+
+         <nav>
+           <ul>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+             <li><a href="#">Nome Playlist</a></li>
+           </ul>
+         </nav>
+
+
+       </section>
+      </section>
+
+
+      <div class="aside-down pdg-l debug">DOWN</div>
+    </section>
+
+
+    <section class="main-content">
 
      <!-- UPPER -->
-      <div class="upper debug">
-        <button class="btn debug"> effetua l'upgrade</button>
+      <div class="upper">
+        <div class="btn"> effetua l'upgrade</div>
       </div>
-     <!-- //UPPER -->
-
 
      <!-- LOWER -->
-      <div class="lower debug">
+      <div class="lower">
 
-        <div class="menu debug">
+        <!-- MENU -->
+        <div class="menu">
           <nav>
-            <ul class="menu-list debug">
-              <li><a href="#">in evidenza</a></li>
-              <li><a href="#">podcast</a></li>
-              <li><a href="#">classifiche</a></li>
-              <li><a href="#">generi e mood</a></li>
-              <li><a href="#">nuove uscite</a></li>
-              <li><a href="#">scopri</a></li>
+            <ul class="menu-list dsp-flex">
+              <li><a href="#">in evidenza</a>
+                <div class="active-box"></div>
+              </li>
+              <li><a href="#">podcast</a>
+                <div class="active-box"></div>
+              </li>
+              <li><a href="#">classifiche</a>
+                <div class="active-box"></div>
+              </li>
+              <li><a href="#">generi e mood</a>
+                <div class="active-box"></div>
+              </li>
+              <li><a href="#">nuove uscite</a>
+                <div class="active-box"></div>
+              </li>
+              <li><a href="#">scopri</a>
+                <div class="active-box"></div>
+              </li>
             </ul>
           </nav>
         </div>
 
+        <!-- LIBRARY -->
 
+        <div class="lower-container mgn-top10">
+
+          <div class="library">
+            <h1>Recently played</h1>
+
+            <div class="category dsp-flex debug">
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>
+
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>
+
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>
+
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>
+
+              <div class="card dsp-flex debug">
+                <div class="box debug"></div>
+              </div>             
+            </div>
+
+
+          </div> 
+          
+          
+        </div>
       </div>
       <!-- //LOWER -->
     </section>

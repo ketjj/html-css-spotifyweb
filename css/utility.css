@@ -1,15 +1,15 @@
+body{
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
 
 
+.dsp-flex{
+  display: flex;
+}
 
-
-
-
-
-/* DEBUG */
-
-.debug {
-  background-color: rgba(255, 0 , 0, .3);
-  border: 1px solid black;
+.txt-ctr {
+  text-align: center;
 }
 
 .ft-l {
@@ -20,14 +20,41 @@
   float: right;
 }
 
+.mgn-top15{
+  margin-top: 15px;
+}
+
+.mgn-top10{
+  margin-top: 10px;
+}
+
+.mgn-top5{
+  margin-top: 5px;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.pdg-l {
+  padding-left: 15px;
+}
+
+.up-case {
+  text-transform: uppercase;
+}
+
+
+
+/* DEBUG */
+
+.debug {
+  background-color: rgba(255, 0 , 0, .3);
+  border: 1px solid black;
+}
+
+
 .h100 {
   height: 100px;
 }
 
-.txt-ctr {
-  text-align: center;
-}
-
-.dsp-flex{
-  display: flex;
-}

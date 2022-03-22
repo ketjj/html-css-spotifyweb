@@ -5,15 +5,79 @@ main {
   overflow: auto;
 }
 
+a, 
+.subtitle {
+  color: #8b8d96;
+}
+
+a:hover,
+.subtitle:hover{
+  color: white;
+}
 
 /* ASIDE */
 
 .aside {
   width: 200px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .aside-up {
-  height: calc(100% - 50px);
+  height: calc(100% - 120px);
 }
+.logo{
+  width: 130px;
+  height: 70px;
+}
+
+.icon-text img{
+  width: 25px;
+  margin-right: 8px;
+}
+
+.home,
+.search,
+.mylibrary{
+  margin-bottom:15px;
+  padding-left: 13px;
+  align-items: center;
+}
+
+
+.home:active,
+.search:active,
+.mylibrary:active{
+  border-left: 2px solid #dbfc8a;
+}
+
+/* ASIDE-CENTER */
+
+.ttl {
+  font-size: 14px;
+  font-weight: 600;
+}
+.aside-center{
+  max-height: 50vh;
+  overflow: auto;
+}
+.aside-center .icon-text i{
+  font-size: 40px;
+  margin: 5px 10px 5px 0;
+}
+.icon-text{
+  align-items: center;
+}
+.aside-center nav{
+  margin-top: 10px;
+  margin-bottom:;
+}
+
+.aside-center nav ul li a{
+  line-height: 32px;
+}
+/* ASIDE_DOWN */
+
 .aside-down {
   height: 50px;
 }
@@ -32,36 +96,111 @@ main {
   top: 0;
   right:0;
   width: calc(100% - 200px);
-  height: 60px;
-  /* overflow: hidden; */
-}
-.btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 999;
+  height: 75px;
+  background-color: rgba(0, 0, 0, .5);
 }
 
+.btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 45px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 /* LOWER */
 
 .lower {
-  padding-top: 5%;
+  padding-top: 7%;
+  width: 100%;
   height: 100%;
+  background-color: #23272f;
 }
 
 .menu-list {
-  text-align: center;
-  padding: 5px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px 15px;
 }
 
 .menu-list li {
-  display: inline-block;
   text-transform: uppercase;
   font-size: 14px;
-  margin: 0 8px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 20px;
 }
 
+.active-box{
+  display: none;
+  width: 40px;
+  height: 2px;
+  margin-top: 5px;
+  margin: 5px auto;
+  background-color: #dbfc8a;
+}
+
+
+li:active .active-box{
+  display: block;
+}
+.lower-container {
+  padding: 2vh 1vw;
+}
+
+.library h1 {
+  font-size: 2em;
+  padding: 5px 0;
+}
+.category {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1400px;
+}
+
+.card {
+  width: calc(1300px / 6);
+  justify-content: flex-start;
+  flex-shrink: 1;
+}
+.box {
+  width: 13vw;
+  height: 13vw;
+}
+
+
+
+/* .box-image {
+  width: 190px;
+  height: 190px;
+  margin-right: 15px;
+  background-image: url('../img/metal_lifting.jpg');
+  background-size: cover;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 190px;
+  height: 190px; 
+}
+.card {
+  flex-direction: column;
+  justify-content: center;
+}
+.img-title {
+
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 14px;
+} */
 /* FOOTER */
 
 footer{
