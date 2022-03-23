@@ -1,0 +1,169 @@
+
+@media screen and (max-width: 1024px) {
+  .lower {
+    padding-top: 10%;
+  }
+  .menu-list {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .menu-list li{
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: calc(100% / 5);
+    margin-right: 24px;
+  }
+
+  .btn{
+   padding: 8px 27px;
+  }
+
+  .library{
+    margin-bottom: 65px;
+  }
+
+  .library h1 {
+    font-size: 1.8em; 
+  }
+
+  .box,
+  .overlay {
+   width: 16vw;
+   height: 16vw;
+  }
+
+  .box img {
+    width: 16vw;
+  }
+  
+  .left-footer{
+    width: 200px;
+  }
+
+  .left-footer img{
+   width: 40px;
+  }
+
+  .song-title .album-title{
+   font-size: 12px;
+   font-weight: 500;
+  }
+
+  .center-footer {
+    width:35%;
+  }
+
+  .song-buttons i{
+    font-size: 14px;
+  }
+
+  .song-buttons .fa-play-circle {
+    font-size: 20px;
+  }
+
+  .right-footer {
+    width: 200px;
+  }
+  .right-footer i{
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .lower {
+    padding-top: 14%;
+  }
+  .menu-list {
+    width: 95%;
+  }
+  .menu-list li{
+    font-size: 13px;
+    margin-left: 33px;
+  }
+  .category{
+    justify-content: center;
+  }
+  .aside {
+    width: 170px;
+  }
+  .upper,
+  .main-content{
+    width: calc(100% - 170px);
+  }
+  .aside-center nav ul li a {
+    font-size:12px;
+    line-height: 23px;
+  }
+  .card {
+    width: calc(100% / 3);
+    margin-right: 60px;
+    height: 300px;
+  }
+
+  .song-buttons{
+    width: 60%;
+  }
+  .song-bar.center{
+    width: 80%;
+  }
+  .in-progress {
+    width: 70%;
+  }
+  .song-buttons i {
+    font-size: 18px;
+  }
+  .right-footer{
+    width: 150px;
+  }
+  .right-footer .in-progress{
+    width: 50%;
+  }
+  .btn{
+   padding: 8px 27px;
+  }
+
+  .library{
+    margin-bottom: 65px;
+  }
+
+  .library h1 {
+    font-size: 1.5em; 
+  }
+
+  .box,
+  .overlay {
+   width: 27vw;
+   height: 27vw;
+  }
+
+  .box img {
+    width: 27vw;
+  }
+  .left-footer {
+    width: 150px;
+  }
+  .left-footer img {
+    width: 30px;
+  }
+  .album-title {
+    font-size: 12px;
+  }
+  .song-title {
+    font-size: 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
+
+ 
