@@ -10,6 +10,11 @@
   clear:both;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
 ul li {
   list-style: none;
 }

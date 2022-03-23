@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
  
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/utility.css">
@@ -33,17 +33,14 @@
         <div class="icon-text">
 
          <div class="home dsp-flex">
-           <div class="active-h"></div>
            <img src="img/home.svg" alt="">
            <span><a href="#">Home</a></span>
          </div>
          <div class="search dsp-flex">
-          <div class="active-h"></div>
           <img src="img/search.svg" alt="">
           <span><a href="#">Cerca</a></span>
          </div>
          <div class="mylibrary dsp-flex">
-          <div class="active-h"></div>
           <img src="img/libreria.svg" alt="">
           <span><a href="#">La tua libreria</a></span>
          </div>
@@ -83,12 +80,12 @@
     <section class="main-content">
 
      <!-- UPPER -->
-      <div class="upper">
+      <div class="upper main">
         <div class="btn"> effetua l'upgrade</div>
       </div>
 
      <!-- LOWER -->
-      <div class="lower">
+      <div class="lower main">
 
         <!-- MENU -->
         <div class="menu">
@@ -97,21 +94,11 @@
               <li><a href="#">in evidenza</a>
                 <div class="active-box"></div>
               </li>
-              <li><a href="#">podcast</a>
-                <div class="active-box"></div>
-              </li>
-              <li><a href="#">classifiche</a>
-                <div class="active-box"></div>
-              </li>
-              <li><a href="#">generi e mood</a>
-                <div class="active-box"></div>
-              </li>
-              <li><a href="#">nuove uscite</a>
-                <div class="active-box"></div>
-              </li>
-              <li><a href="#">scopri</a>
-                <div class="active-box"></div>
-              </li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">classifiche</a></li>
+              <li><a href="#">generi e mood</a></li>
+              <li><a href="#">nuove uscite</a></li>
+              <li><a href="#">scopri</a></li>
             </ul>
           </nav>
         </div>
@@ -120,38 +107,130 @@
 
         <div class="lower-container mgn-top10">
 
+        <!-- category recently-played  -->
           <div class="library">
             <h1>Recently played</h1>
 
-            <div class="category dsp-flex debug">
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
+            <div class="category recently-played dsp-flex">
+
+              <div class="card dsp-flex">
+                <div class="box first-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Heavy Metal</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
               </div>
 
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
+              <div class="card dsp-flex">
+                <div class="box second-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
               </div>
 
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
+              <div class="card dsp-flex">
+                <div class="box third-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Heavy Metal</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
               </div>
 
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
-              </div>
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
+              <div class="card dsp-flex">
+                <div class="box forth-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Heavy Metal</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
               </div>
 
-              <div class="card dsp-flex debug">
-                <div class="box debug"></div>
-              </div>             
+              <div class="card dsp-flex">
+                <div class="box fifth-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Heavy Metal</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
+              </div>
+
+              <div class="card dsp-flex">
+                <div class="box sixth-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Heavy Metal</div>
+                <div class="subtitle mgn-top5">Subtitle</div>
+              </div>
+
             </div>
+          </div>  
+
+        <!-- category personalized  -->         
+          <div class="library">
+            <h1>Creato per John Doe</h1>
+            <div class="subtitle mgn-top10">Più ascolti, più accurati saranno i suggerimenti.</div>
+
+            <div class="category personalize-lib dsp-flex">
+
+              <div class="card dsp-flex">
+                <div class="box first-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Realize Radar</div>
+              </div>
+
+              <div class="card dsp-flex">
+                <div class="box second-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Daily Mix 1</div>
+              </div>
+            </div>
+          </div>
 
 
-          </div> 
-          
-          
+
+          <!-- category the most popular  -->         
+          <div class="library">
+            <h1>Artisti pi&#249; popolari</h1>
+            <div class="subtitle mgn-top10">Più ascolti, più accurati saranno i suggerimenti.</div>
+
+            <div class="category popolari dsp-flex">
+
+              <div class="card dsp-flex">
+                <div class="box first-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Realize Radar</div>
+              </div>
+
+              <div class="card dsp-flex">
+                <div class="box second-img">
+                  <div class="overlay">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                </div>
+                <div class="img-title mgn-top10">Daily Mix 1</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- //LOWER -->

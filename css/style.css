@@ -2,7 +2,7 @@
 
 main {
   height: calc(100vh - 70px);
-  overflow: auto;
+  overflow: hidden;
 }
 
 a, 
@@ -10,8 +10,7 @@ a,
   color: #8b8d96;
 }
 
-a:hover,
-.subtitle:hover{
+a:hover{
   color: white;
 }
 
@@ -44,10 +43,7 @@ a:hover,
   align-items: center;
 }
 
-
-.home:active,
-.search:active,
-.mylibrary:active{
+.home{
   border-left: 2px solid #dbfc8a;
 }
 
@@ -57,10 +53,7 @@ a:hover,
   font-size: 14px;
   font-weight: 600;
 }
-.aside-center{
-  max-height: 50vh;
-  overflow: auto;
-}
+
 .aside-center .icon-text i{
   font-size: 40px;
   margin: 5px 10px 5px 0;
@@ -70,7 +63,9 @@ a:hover,
 }
 .aside-center nav{
   margin-top: 10px;
-  margin-bottom:;
+  max-height: 40vh;
+  overflow: auto;
+
 }
 
 .aside-center nav ul li a{
@@ -82,10 +77,16 @@ a:hover,
   height: 50px;
 }
 
+
+
+
 /* MAIN-CONETENT */
 
 .main-content {
   width: calc(100% - 200px);
+  max-width: 1400px;
+  overflow: auto;
+  background-color: #23272f;
 }
 
 /* UPPER */
@@ -121,8 +122,6 @@ a:hover,
 .lower {
   padding-top: 7%;
   width: 100%;
-  height: 100%;
-  background-color: #23272f;
 }
 
 .menu-list {
@@ -140,7 +139,6 @@ a:hover,
 }
 
 .active-box{
-  display: none;
   width: 40px;
   height: 2px;
   margin-top: 5px;
@@ -149,61 +147,127 @@ a:hover,
 }
 
 
-li:active .active-box{
-  display: block;
-}
 .lower-container {
-  padding: 2vh 1vw;
+  padding: 0 20px 30px 20px;
 }
-
+.library{
+  margin-bottom: 30px;
+}
 .library h1 {
   font-size: 2em;
   padding: 5px 0;
 }
 .category {
+  width:100%;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1400px;
+  margin-top: 30px;
 }
-
-.card {
-  width: calc(1300px / 6);
-  justify-content: flex-start;
-  flex-shrink: 1;
+.card{
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  width: calc(100% / 7);
+  text-align: center;
 }
 .box {
-  width: 13vw;
-  height: 13vw;
+  width: 12vw;
+  height: 12vw;
 }
 
-
-
-/* .box-image {
-  width: 190px;
-  height: 190px;
-  margin-right: 15px;
+.first-img{
   background-image: url('../img/metal_lifting.jpg');
   background-size: cover;
 }
-.overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 190px;
-  height: 190px; 
+.second-img{
+  background-image: url('../img/stranger.jpeg');
+  background-size: cover;
 }
-.card {
-  flex-direction: column;
-  justify-content: center;
+.third-img{
+  background-image: url('../img/aquietplace.jpeg');
+  background-size: cover;
 }
-.img-title {
+.forth-img{
+  background-image: url('../img/split.jpeg');
+  background-size: cover;
+}
+.fifth-img{
+  background-image: url('../img/cure.jpeg');
+  background-size: cover;
+}
+.sixth-img{
+  background-image: url('../img/sinister.jpeg');
+  background-size: cover;
+}
 
+.img-title {
   font-weight: 700;
 }
-.subtitle {
+.subtitle{
   font-size: 14px;
-} */
+}
+
+.overlay{
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.overlay i {  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  display: block;
+}
+.box:hover .overlay{
+  display: block;
+  cursor: pointer;
+}
+
+
+/* PERSONILIZE CATEGORY */
+
+.personalize-lib .first-img{
+  background-image: url('../img/radar.jpeg');
+}
+
+.personalize-lib .second-img{
+  background-image: url('../img/mixdaily.jpeg');
+}
+
+/* POPULAR CATEGORY */
+
+.popolari .first-img,
+.popolari .second-img{
+  border-radius: 50%; 
+  overflow: hidden;
+}
+
+.popolari .first-img{
+  background-image: url('../img/youg.jpeg');  
+}
+
+.popolari .second-img{
+  background-image: url('../img/player_left.jpg');
+}
+
+
 /* FOOTER */
 
 footer{
   justify-content: space-between;
+  align-items: center;
   height: 70px;
+}
+
+.center-footer{
+  width: 40%;
+}
+
+.right-footer {
+  width:200px;
 }
