@@ -29,7 +29,10 @@ a:hover,
   width: 130px;
   height: 70px;
 }
-
+.hidden-logo  {
+  width: 28px;
+  display: none;
+}
 .icon-text img{
   width: 25px;
   margin-right: 8px;
@@ -84,6 +87,8 @@ a:hover,
   color:white;
   cursor: pointer;
 }
+
+
 /* ASIDE_DOWN */
 
 .aside-down {
@@ -129,7 +134,7 @@ a:hover,
   background-color: #23272f;
 }
 
-/* UPPER */
+/* MENU FIXED */
 
 .upper {
   position: fixed;
@@ -157,7 +162,7 @@ a:hover,
   cursor: pointer;
 }
 
-/* LOWER */
+/* LOWER-LIBRARY */
 
 .lower {
   padding-top: 7%;
@@ -185,7 +190,6 @@ a:hover,
   background-color: #dbfc8a;
 }
 
-
 .lower-container {
   padding: 0 20px 30px 20px;
 }
@@ -206,9 +210,8 @@ a:hover,
   position: relative;
   display: flex;
   flex-direction: column;
-  width: calc(100% / 7);
+  width: calc(100% / 6);
   align-items: center;
-  margin-right: 15px;
 }
 
 .box {

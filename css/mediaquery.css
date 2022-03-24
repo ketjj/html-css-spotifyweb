@@ -1,19 +1,24 @@
+/* 
+MAX_WIDTH: 1024PX 
+*/
 
 @media screen and (max-width: 1024px) {
   .lower {
     padding-top: 10%;
   }
+  
   .menu-list {
     flex-wrap: wrap;
     align-items: center;
   }
+
   .menu-list li{
     margin-bottom: 20px;
   }
 
   .card {
-    width: calc(100% / 5);
-    margin-right: 24px;
+    width: calc(100% / 4);
+    padding-right: 24px;
   }
 
   .btn{
@@ -55,6 +60,10 @@
     width:35%;
   }
 
+  .song-buttons {
+    width: 60%;
+  }
+
   .song-buttons i{
     font-size: 14px;
   }
@@ -66,64 +75,78 @@
   .right-footer {
     width: 200px;
   }
+
   .right-footer i{
     font-size: 12px;
   }
 }
 
-
-
-
+/* 
+MAX_WIDTH: 768PX 
+*/
 
 @media screen and (max-width: 768px) {
   .lower {
-    padding-top: 14%;
+    padding-top: 16%;
   }
+
+  .lower-container{
+    padding: 0 20px 30px 44px;
+  }
+
   .menu-list {
     width: 95%;
   }
+
   .menu-list li{
     font-size: 13px;
     margin-left: 33px;
   }
+
   .category{
     justify-content: center;
   }
-  .aside {
-    width: 170px;
-  }
+
   .upper,
   .main-content{
     width: calc(100% - 170px);
   }
+
   .aside-center nav ul li a {
     font-size:12px;
     line-height: 23px;
   }
+
   .card {
-    width: calc(100% / 3);
-    margin-right: 60px;
+    width: calc(100% / 2);
+    padding-right: 1vw;
     height: 300px;
   }
 
   .song-buttons{
     width: 60%;
   }
+
   .song-bar.center{
     width: 80%;
   }
+
   .in-progress {
     width: 70%;
   }
+
   .song-buttons i {
     font-size: 18px;
   }
+
   .right-footer{
     width: 150px;
   }
+
   .right-footer .in-progress{
     width: 50%;
   }
+
   .btn{
    padding: 8px 27px;
   }
@@ -145,24 +168,186 @@
   .box img {
     width: 27vw;
   }
+
   .left-footer {
     width: 150px;
   }
+
   .left-footer img {
     width: 30px;
   }
+
   .album-title {
     font-size: 12px;
   }
+
   .song-title {
     font-size: 10px;
   }
-
-
 }
 
-@media screen and (max-width: 425px) {
+/* 
+MAX_WIDTH: 568PX 
+*/
 
+
+@media screen and (max-width: 568px) {
+  .aside {
+    width: 150px;
+  }
+
+  .main-content,
+  .upper {
+    width: calc(100% - 150px);
+  }
+
+  .lower-container {
+    padding: 0 20px 30px 25px;
+  }
+
+  .song-icons {
+    margin-left: 16px;
+  }
+
+  .center-footer {
+    width: 43%;
+  }
+
+  .song-buttons {
+    width: 75%;
+  }
+
+  .in-progress {
+    width: 60%;
+  }
+
+  .right-footer {
+    width: 131px;
+  }
+
+  .lower {
+    padding-top: 21%;
+  }
+
+  .menu-list li {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .album-title {
+    font-size: 10px;
+  }
+
+  .song-title {
+    font-size: 8px;
+  }
+
+  .song-icons i {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+}
+
+/* 
+MAX_WIDTH: 426PX 
+*/
+
+
+@media screen and (max-width: 426px) {
+  .aside {
+    width: 50px;
+  }
+
+  .icon-text span,
+  .logo,
+  .aside-center{
+    display: none;
+  }
+
+  .hidden-logo{
+    display: block;
+    margin: 7px auto;
+  }
+
+  .main-content,
+  .upper {
+    width: calc(100% - 50px);
+  }
+
+  .icon-text {
+    margin-top: 15px;
+  }
+
+  .home,
+  .search,
+  .library {
+    border: none;
+    padding-left: 13px;
+    margin: 8px auto;
+  }
+
+  .lower {
+    padding-top: 23%;
+  }
+
+  .menu-list li {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  .lower-container {
+    padding: 0 20px 30px 25px;
+  }
+
+  .card{
+    padding: 0;
+    height: 240px;
+  }
+
+  .box img {
+    width: 35vw;
+  }
+
+  .box, .overlay {
+    width: 36vw;
+    height: 35vw;
+  }
+  .img-title{
+    font-size: 12px;
+  }
+
+  .center-footer {
+    width: 55%;
+  }
+
+  .song-buttons {
+    width: 90%;
+  }
+
+  .song-buttons i {
+    font-size: 14px;
+  }
+
+  .right-footer {
+    width: 114px;
+  }
+
+  .right-footer i {
+    font-size: 10px;
+  }
+
+  .aside-down span {
+    display:none;
+  }
+
+  .install {
+    border:none;
+  }
+
+  .install i {
+    margin: 0 auto 0 5px;
+    font-size: 14px;
+  }
 }
 
 
